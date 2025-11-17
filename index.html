@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">🌌 Solar System</h1>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="planets.html">Planets</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Explore Our Solar System</h1>
+            <p class="hero-subtitle">Discover the wonders of our cosmic neighborhood</p>
+            <button class="cta-button" onclick="scrollToSection()">Start Exploring</button>
+        </div>
+        <div class="stars"></div>
+    </header>
+
+    <section class="info-section" id="info">
+        <div class="container">
+            <h2 class="section-title">About Our Solar System</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="card-icon">🌟</div>
+                    <h3>1 Star</h3>
+                    <p>The Sun is at the center of our solar system, providing light and heat to all planets.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">🪐</div>
+                    <h3>8 Planets</h3>
+                    <p>From Mercury to Neptune, each planet has unique characteristics and mysteries.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">🌙</div>
+                    <h3>200+ Moons</h3>
+                    <p>Natural satellites orbit around planets, with some being larger than small planets.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">☄️</div>
+                    <h3>Asteroids & Comets</h3>
+                    <p>Countless rocky and icy bodies travel through our solar system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(0)">
+                        <span>How old is our Solar System?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Our Solar System formed about 4.6 billion years ago from a giant rotating cloud of gas and dust called the solar nebula.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(1)">
+                        <span>What is the largest planet?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Jupiter is the largest planet in our Solar System, with a mass more than twice that of all other planets combined.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(2)">
+                        <span>How far is the Sun from Earth?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        The average distance from Earth to the Sun is about 93 million miles (150 million kilometers), also known as 1 Astronomical Unit (AU).
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(3)">
+                        <span>Can humans live on other planets?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Currently, no other planet in our Solar System can naturally support human life. However, Mars is being studied as a potential candidate for future human colonization with the help of technology.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Solar System Explorer. Journey through the cosmos! 🚀</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
